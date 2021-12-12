@@ -67,7 +67,7 @@ void loop(){
 }
 
  int update(int16_t AcX) {
-   float acceleration = AcX ;
+   float acceleration = AcX/32768*16*9.81 ;
    velocity = acceleration * delta_t ;
    return displacement = velocity * delta_t ;
   }
